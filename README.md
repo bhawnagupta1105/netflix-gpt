@@ -4,8 +4,11 @@
 - Create React app
 - Configured Tailwind
 -Header
+Routing of app
 Login Form
 Sign Up Form
+Form Validation
+useRef Hook
 
 
 
