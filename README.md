@@ -9,6 +9,10 @@ Login Form
 Sign Up Form
 Form Validation
 useRef Hook
+Firebase setup
+Creating Sign up user account
+Implement Sign In user api
+Created Redux Store with users slice
 
 
 
