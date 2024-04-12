@@ -4,7 +4,8 @@ const Browse = () => {
     return (
         <div>
             <Header/>
-<h2>cnkxcjnsk</h2>
+            
+
         </div>
     )
 };
