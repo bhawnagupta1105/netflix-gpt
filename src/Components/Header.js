@@ -54,13 +54,22 @@ const Header = () => {
     navigate("/");
   };
   return (
-    <div className="fixed top-0 left-0 z-[1000]  w-screen  px-8 py-2 bg-gradient-to-b from-black  flex justify-between">
-      <div className="">
+    <div className="fixed top-0 left-0 z-[1000]  w-screen  px-8 py-2 bg-gradient-to-b from-black  flex justify-between ">
+      <div className=" flex ">
+        <div>
         <img
           className=" w-44 "
           src="https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png"
           alt="logo"
         ></img>
+      </div>
+    {user &&  (<div className="p-2 cursor-pointer">
+        <button className="m-2 p-2 text-xl text-white " >Home</button>
+        <button className="m-2 p-2 text-xl text-white">Tv Shows</button>
+        <button className="m-2 p-2 text-xl text-white">Movies</button>
+        <button className="m-2 p-2 text-xl text-white">New & Popular</button>
+        <button className="m-2 p-2 text-xl text-white">My List</button>
+      </div>)}
       </div>
       {user ? (
         <div className="flex p-2">
