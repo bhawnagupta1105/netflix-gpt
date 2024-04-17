@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import Header from "./Header";
 import { checkValidData } from "../Utils/Validate";
-import {useNavigate} from "react-router-dom";
+
 import {useDispatch} from "react-redux";
 import { addUser } from "../Utils/userSlice";
 
@@ -11,10 +11,10 @@ import {
   updateProfile
 } from "firebase/auth";
 import { auth } from "../Utils/firebase";
+import { Photo_Url } from "../Utils/constants";
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
   const [errormessage, seterrormessage] = useState(null);
-  const navigate = useNavigate();
   const dispatch = useDispatch();
   //This will create a reference
   const name = useRef(null);
@@ -41,7 +41,7 @@ const Login = () => {
           // Signed up
           const user = userCredential.user;
           updateProfile(user, {
-            displayName: name.current.value, photoURL: "https://example.com/jane-q-user/profile.jpg"
+            displayName: name.current.value, photoURL: {Photo_Url}
           }).then(() => {
             const { uid, email, displayName, photoURL } = auth.currentUser;
             dispatch(
@@ -52,13 +52,12 @@ const Login = () => {
                 photoURL,
               })
             );
-          navigate("/browse");
 
 
             // Profile updated!
             // ...
           }).catch((error) => {
-          navigate("/error");
+   
 
             // An error occurred
             // ...
@@ -83,7 +82,7 @@ const Login = () => {
           // Signed in
           const user = userCredential.user;
           console.log(user);
-          navigate("/browse");
+    
 
 
           // ...
