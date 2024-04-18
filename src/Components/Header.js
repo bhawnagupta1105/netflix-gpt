@@ -72,6 +72,8 @@ const Header = () => {
       </div>)}
       </div>
       {user ? (
+
+        
         <div className="flex p-2">
           <img
             className="w-12 h-12 m-2 rounded-lg"
