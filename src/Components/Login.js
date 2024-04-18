@@ -12,6 +12,7 @@ import {
 } from "firebase/auth";
 import { auth } from "../Utils/firebase";
 import { Photo_Url } from "../Utils/constants";
+import Footer from "./Footer";
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
   const [errormessage, seterrormessage] = useState(null);
@@ -97,10 +98,11 @@ const Login = () => {
   return (
     <div className="relative">
       <Header />
+      <div>
 
       <div className="absolute w-[100%]">
         <img
-          className="max-h-full bg-cover bg-repeat w-full"
+          className=" w-full"
           src="https://i.redd.it/zjgs096khv591.jpg"
           alt="background-img1"
         ></img>
@@ -161,6 +163,8 @@ const Login = () => {
           </p>
         </form>
       </div>
+      </div>
+      <Footer/>
     </div>
   );
 };

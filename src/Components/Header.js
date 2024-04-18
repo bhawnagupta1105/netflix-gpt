@@ -73,8 +73,11 @@ const Header = () => {
       </div>
       {user ? (
 
-        
+
         <div className="flex p-2">
+            <img className="h-[45px] w-[45px] mt-3 mx-2" src="https://img.icons8.com/ios/50/FFFFFF/search--v1.png" alt="search--v1"/>
+            <img className="h-[45px] w-[45px] mt-3 mx-2" src="https://img.icons8.com/serif/32/FFFFFF/experimental-appointment-reminders-serif.png" alt="experimental-appointment-reminders-serif"/>
+
           <img
             className="w-12 h-12 m-2 rounded-lg"
             alt="username"
