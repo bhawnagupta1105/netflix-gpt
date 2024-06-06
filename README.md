@@ -20,11 +20,14 @@
 - Unsubscribed to the onAuthStateChanged callback
 - Register for tmdb api and  create a new app and get access token
 - Get data from tmdb
-- 
-- 
-- 
-- 
-- 
+- Custom hook for now Playing Movies
+- Created movieSlice
+- Update store with movies data
+- Planning for main & second container
+- Fetch data for trailer
+- Update store with trailer video data
+- Embedded the yt video
+- Tailwind classes to look it awesome
 
 
 - Login/Sign up

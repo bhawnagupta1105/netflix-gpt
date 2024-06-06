@@ -116,7 +116,7 @@ const Login = () => {
       <div>
         <form
           onSubmit={(e) => e.preventDefault()}
-          className="absolute p-12 bg-black w-3/12 text-white my-36 mx-auto right-0 left-0 bg-opacity-70"
+          className="absolute p-[2%] bg-black w-3/12 text-white my-36 mx-auto right-0 left-0 bg-opacity-70"
         >
           <h1 className="font-bold text-3xl py-4">
             {isSignInForm ? "Sign In" : "Sign Up"}
@@ -126,25 +126,25 @@ const Login = () => {
             ref={name}
               type="text"
               placeholder="Full Name"
-              className="p-4 my-4 w-full bg-gray-600 rounded-lg"
+              className="p-[4%] my-[4%] w-full bg-gray-600 rounded-lg"
             ></input>
           )}
           <input
             ref={email}
             type="text"
             placeholder="Email/Username"
-            className="p-4 my-4 w-full bg-gray-600 rounded-lg"
+            className="p-[4%] my-[4%] w-full bg-gray-600 rounded-lg"
           ></input>
 
           <input
             ref={password}
             type="password"
             placeholder="Enter your Password"
-            className="p-4 my-4 w-full bg-gray-600 rounded-lg"
+            className="p-[4%] my-[4%] w-full bg-gray-600 rounded-lg"
           ></input>
           <p className="text-red-500 text-lg p-2">{errormessage}</p>
           <button
-            className="p-4 my-4 bg-red-600 w-full rounded-lg"
+            className="p-[4%] my-[4%] bg-red-600 w-full rounded-lg"
             onClick={HandelButtonClick}
           >
             {isSignInForm ? "Sign In" : "Sign Up"}
@@ -156,7 +156,7 @@ const Login = () => {
             <div className="float-right">Need help?</div>
           </div>
 
-          <p onClick={toggleSignInForm} className="underline my-4 ">
+          <p onClick={toggleSignInForm} className="underline my-[4%] ">
             {isSignInForm
               ? "New to Netflix?Sign up now"
               : "Already Registered? Sign in now"}
