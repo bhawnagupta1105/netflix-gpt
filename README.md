@@ -28,6 +28,13 @@
 - Update store with trailer video data
 - Embedded the yt video
 - Tailwind classes to look it awesome
+- Build Secondary Component
+- Build Movie List
+- Build Movie Card
+- TMDB Image CDN url
+- Worked on the Browsing PAge
+- Made another ccustoo hook that is usePopularMovies and useUpcommingMovies
+- GPT search feature
 
 
 - Login/Sign up

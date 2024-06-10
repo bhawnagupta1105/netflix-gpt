@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { addUser, removeUser } from "../Utils/userSlice";
-
+import { toggleGptSearchView } from "../Utils/gptSlice";
 const Header = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -53,6 +53,11 @@ const Header = () => {
   const HandelSignIn = () => {
     navigate("/");
   };
+  const handelGptSearchClick = () => {
+    //Toggle my Gpt Search
+dispatch(toggleGptSearchView());
+
+  }
   return (
     <div className="fixed top-0 left-0 z-[1000]  w-screen  px-8 py-2 bg-gradient-to-b from-black  flex justify-between ">
       <div className=" flex ">
@@ -69,6 +74,7 @@ const Header = () => {
         <button className="m-2 p-2 text-xl text-white">Movies</button>
         <button className="m-2 p-2 text-xl text-white">New & Popular</button>
         <button className="m-2 p-2 text-xl text-white">My List</button>
+        <button className="m-2 p-2 text-xl text-white" onClick={handelGptSearchClick}>GPT Search</button>
       </div>)}
       </div>
       {user ? (
