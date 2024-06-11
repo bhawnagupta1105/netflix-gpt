@@ -7,10 +7,14 @@ import { useDispatch } from "react-redux";
 import { addUser, removeUser } from "../Utils/userSlice";
 import { toggleGptSearchView } from "../Utils/gptSlice";
 import { SUPPORTED_LANGUAGES } from "../Utils/constants";
+import { changeLanguage } from "../Utils/configSlice";
+import lang from "../Utils/languageConstants";
 const Header = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const user = useSelector((store) => store.user);
+  const showGptSearch = useSelector((store) => store.gpt.showGptSearch);
+  const langkey = useSelector((store) => store.config.lang);
   const HandelSignOut = () => {
     signOut(auth)
       .then(() => {
@@ -57,6 +61,11 @@ const Header = () => {
     //Toggle my Gpt Search
     dispatch(toggleGptSearchView());
   };
+
+  const handelLanguageChange = (e) => {
+//console.log(e.target.value)
+dispatch(changeLanguage(e.target.value));
+  }
   return (
     <div className="fixed top-0 left-0 z-[1000]  w-screen  px-8 py-2 bg-gradient-to-b from-black  flex justify-between ">
       <div className=" flex ">
@@ -69,25 +78,25 @@ const Header = () => {
         </div>
         {user && (
           <div className="p-2 cursor-pointer">
-            <button className="m-2 p-2 text-xl text-white ">Home</button>
-            <button className="m-2 p-2 text-xl text-white">Tv Shows</button>
-            <button className="m-2 p-2 text-xl text-white">Movies</button>
+            <button className="m-2 p-2 text-xl text-white ">{lang[langkey].Home}</button>
+            <button className="m-2 p-2 text-xl text-white">{lang[langkey].Tv_Shows}</button>
+            <button className="m-2 p-2 text-xl text-white">{lang[langkey].Movies}</button>
             <button className="m-2 p-2 text-xl text-white">
-              New & Popular
+             {lang[langkey].NewPopular}
             </button>
-            <button className="m-2 p-2 text-xl text-white">My List</button>
-            <select className="p-2 bg-gray-900 text-white m-2 ">
+            <button className="m-2 p-2 text-xl text-white">{lang[langkey].My_List}</button>
+            {showGptSearch&&<select className="p-2 bg-gray-900 text-white m-2 " onChange={handelLanguageChange}>
               {SUPPORTED_LANGUAGES.map((lang) => (
                 <option key={lang.identifier} value={lang.identifier}>
                   {lang.name}
                 </option>
               ))}
-            </select>
+            </select>}
             <button
               className="m-2 p-2 text-xl text-white"
               onClick={handelGptSearchClick}
             >
-              GPT Search
+              {showGptSearch? "Home" : "GPT Search"}
             </button>
           </div>
         )}

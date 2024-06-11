@@ -34,7 +34,11 @@
 - TMDB Image CDN url
 - Worked on the Browsing PAge
 - Made another ccustoo hook that is usePopularMovies and useUpcommingMovies
-- GPT search feature
+- GPT search Page
+- GPT Search Bar
+- Multi-language language feature in our app
+- Integrate gpt api
+
 
 
 - Login/Sign up

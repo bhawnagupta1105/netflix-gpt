@@ -2,7 +2,8 @@ import {configureStore} from "@reduxjs/toolkit";
 import userReducer from "../Utils/userSlice";
 import  movieReducer from "../Utils/userSlice";
 import gptReducer from "../Utils/gptSlice";
-import configReducer from "./configSlice";
+import configReducer from "../Utils/configSlice";
+
 const appstore = configureStore(
     {
         reducer: {
@@ -12,6 +13,5 @@ const appstore = configureStore(
             config:configReducer,
         },
 
-    }
-);
+    });
 export default appstore;
