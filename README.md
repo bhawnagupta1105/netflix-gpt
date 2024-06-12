@@ -38,7 +38,13 @@
 - GPT Search Bar
 - Multi-language language feature in our app
 - Integrate gpt api
-
+- Gpt search api call
+- fetched gpt movie suggestions from tmdb
+- created gpt slice and added data
+- we resued movie list component to make movie suggestion container
+- added .env file
+- adding .env to git ignore
+- memoization
 
 
 - Login/Sign up
@@ -56,3 +62,6 @@
         - Search Bar
         - Movie Suggestion
         - Background Page
+
+
+By default mobile then tab then desktop

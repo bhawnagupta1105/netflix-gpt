@@ -1,12 +1,15 @@
 import React, { useRef } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import lang from "../Utils/languageConstants";
 import openai from "../Utils/openAi";
 import { API_OPTIONS } from "../Utils/constants";
+import { addGptMovieResult } from "../Utils/gptSlice";
+
 const GptSearchBar = () => {
   const langkey = useSelector((store) => store.config.lang);
   const searchText = useRef(null);
   //search movie
+  const dispatch = useDispatch();
   const searchMovieTmdb = async (movie) => {
     const data = await fetch(
       "https://api.themoviedb.org/3/search/movie?query=" +
@@ -32,20 +35,23 @@ const GptSearchBar = () => {
     const gptMovieList = gptResults.choices?.[0]?.message?.content.split(",");
     //for 5 movie we will find in Tmdb api
 
-    const promiseArray = gptMovieList.map(movie => searchMovieTmdb(movie));
+    const promiseArray = gptMovieList.map((movie) => searchMovieTmdb(movie));
 
     const tmdbResults = await Promise.all(promiseArray);
     console.log(tmdbResults);
+    dispatch(
+      addGptMovieResult({ movieNames: gptMovieList, movieResultd: tmdbResults })
+    );
   };
   return (
-    <div className="pt-[10%] flex justify-center">
+    <div className="pt:[30%] md:pt-[10%] flex justify-center">
       <form
         className=" bg-black grid grid-cols-12"
         onSubmit={(e) => e.preventDefault()}
       >
         <input
           ref={searchText}
-          className="p-4 m-4 col-span-9"
+          className="w-full md:w-1/2 p-4 m-4 col-span-9"
           type="text"
           placeholder={lang[langkey].gptSearchPlaceHolder}
         ></input>

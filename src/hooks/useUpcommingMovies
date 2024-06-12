@@ -14,6 +14,7 @@ const getUpcommingMovies = async () => {
     const json = await data.json();
     dispatch(addUpcommingMovies(json.results));
 };
+//if my popular movies are not there then only make an api call
 useEffect(() => {
     !upcommingMovies && getUpcommingMovies();
 },[]);

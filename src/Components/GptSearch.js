@@ -5,16 +5,18 @@ import GptSearchPage from "./GptSearchPage";
 const GptSearch = () => {
 return (
     <div>
-        <div className="absolute -z-10"> 
+        <div className="fixed -z-10"> 
         <img
-          className=" w-full"
+          className="h-screen object-cover"
           src="https://i.redd.it/zjgs096khv591.jpg"
           alt="background-img1"
         ></img>
 
         </div>
+        <div className="pt-[30%] md:p-0">
         <GptSearchBar/>
         <GptSearchPage/>
+        </div>
     </div>
 )
 }

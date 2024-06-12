@@ -67,17 +67,17 @@ const Header = () => {
 dispatch(changeLanguage(e.target.value));
   }
   return (
-    <div className="fixed top-0 left-0 z-[1000]  w-screen  px-8 py-2 bg-gradient-to-b from-black  flex justify-between ">
+    <div className="fixed top-0 left-0 z-[1000]  w-screen  px-8 py-2 bg-gradient-to-b from-black  flex  flex-col  md:flex-row md:justify-between ">
       <div className=" flex ">
         <div>
           <img
-            className=" w-44 "
+            className=" w-44 mx-auto md:mx-0"
             src="https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png"
             alt="logo"
           ></img>
         </div>
         {user && (
-          <div className="p-2 cursor-pointer">
+          <div className="p-2 cursor-pointer flex justify-between">
             <button className="m-2 p-2 text-xl text-white ">{lang[langkey].Home}</button>
             <button className="m-2 p-2 text-xl text-white">{lang[langkey].Tv_Shows}</button>
             <button className="m-2 p-2 text-xl text-white">{lang[langkey].Movies}</button>
@@ -115,7 +115,7 @@ dispatch(changeLanguage(e.target.value));
           />
 
           <img
-            className="w-12 h-12 m-2 rounded-lg"
+            className="w-12 h-12 m-2 rounded-lg hidden md:block"
             alt="username"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2at5hPd04u1iJkhn3qC8j0WFxqcOVeeZfx66MklJ_Lg&s"
           ></img>

@@ -102,7 +102,7 @@ const Login = () => {
 
       <div className="absolute w-[100%]">
         <img
-          className=" w-full"
+          className="h-screen object-cover"
           src="https://i.redd.it/zjgs096khv591.jpg"
           alt="background-img1"
         ></img>
@@ -116,7 +116,7 @@ const Login = () => {
       <div>
         <form
           onSubmit={(e) => e.preventDefault()}
-          className="absolute p-[2%] bg-black w-3/12 text-white my-36 mx-auto right-0 left-0 bg-opacity-70"
+          className="absolute p-[2%] bg-black w-full md:w-3/12 text-white my-36 mx-auto right-0 left-0 bg-opacity-70"
         >
           <h1 className="font-bold text-3xl py-4">
             {isSignInForm ? "Sign In" : "Sign Up"}
