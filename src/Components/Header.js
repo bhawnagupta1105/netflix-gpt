@@ -128,7 +128,7 @@ dispatch(changeLanguage(e.target.value));
         </div>
       ) : (
         <button
-          className="text-white bg-red-600 font-bold  text-xl px-4 py-2 m-2 rounded-lg "
+          className="text-white bg-red-600 font-bold  text-lg px-[1%] py-[1%]  md:py-0 m-[1%] rounded-lg "
           onClick={HandelSignIn}
         >
           Sign In
