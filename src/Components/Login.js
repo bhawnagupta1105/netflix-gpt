@@ -103,7 +103,8 @@ const Login = () => {
       <div className="absolute w-[100%]">
         <img
           className="h-screen object-cover"
-          src="https://i.redd.it/zjgs096khv591.jpg"
+         // src="https://i.redd.it/zjgs096khv591.jpg"
+          src="https://assets.nflxext.com/ffe/siteui/vlv3/a73c4363-1dcd-4719-b3b1-3725418fd91d/fe1147dd-78be-44aa-a0e5-2d2994305a13/IN-en-20231016-popsignuptwoweeks-perspective_alpha_website_large.jpg"
           alt="background-img1"
         ></img>
 
