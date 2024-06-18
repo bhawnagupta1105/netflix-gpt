@@ -1,8 +1,8 @@
 
 
-const PlanDetails = (props) => {
 
-        const {data} =props;
+const PlanDetails = ({data}) => {
+
         const {
             MonthlyPrice,
             VideoAudio,
@@ -11,37 +11,64 @@ const PlanDetails = (props) => {
             SupportedDevice,
             DevicesHousehold,
             DownloadDevices
-        } = data?.info;
-
+        } = data;
+console.log(data);
   return (
     <div>
-      <div>
-        <div>Monthly price</div>
-        <div>{MonthlyPrice}</div>
+      <div className="flex text-xl font-bold">
+        <div className="w-1/2">Monthly price</div>
+        <div className="w-1/2 text-right">{MonthlyPrice}</div>
       </div>
-      <div>
-        <div>Video and sound quality</div>
-        <div>{VideoAudio}</div>
+      <div className="pt-[1%] pb-[1%] ">
+            <div className="h-1 bg-slate-700 opacity-20"></div>
+          </div>
+      
+          <div className="flex text-xl font-bold">
+
+        <div className="w-1/2 ">Video and sound quality</div>
+        <div className="w-1/2 text-right">{VideoAudio}</div>
       </div>
-      <div>
-        <div>Resolution</div>
-        <div>{Resolution}</div>
+      <div className="pt-[1%] pb-[1%] ">
+            <div className="h-1 bg-slate-700 opacity-20"></div>
+          </div>
+          
+          <div className="flex text-xl font-bold">
+
+        <div className="w-1/2">Resolution</div>
+        <div className="w-1/2 text-right">{Resolution}</div>
       </div>
-      <div>
-        <div>Spatial audio (immersive sound) </div>
-        <div>{SpatialAudio}</div>
+      <div className="pt-[1%] pb-[1%] ">
+            <div className="h-1 bg-slate-700 opacity-20"></div>
+          </div>
+          <div className="flex text-xl font-bold">
+
+        <div className="w-1/2">Spatial audio (immersive sound) </div>
+        <div className="w-1/2 text-right">{SpatialAudio}</div>
       </div>
-      <div>
-        <div>Supported Devices</div>
-        <div>{SupportedDevice}</div>
+      <div className="pt-[1%] pb-[1%] ">
+            <div className="h-1 bg-slate-700 opacity-20"></div>
+          </div>
+          
+          <div className="flex text-xl font-bold">
+
+        <div className="w-1/2">Supported Devices</div>
+        <div className="w-1/2 text-right">{SupportedDevice}</div>
       </div>
-      <div>
-        <div>Devices your household can watch at the same time</div>
-        <div>{DevicesHousehold}</div>
+      <div className="pt-[1%] pb-[1%] ">
+            <div className="h-1 bg-slate-700 opacity-20"></div>
+          </div>
+          <div className="flex text-xl font-bold">
+
+        <div className="w-1/2">Devices your household can watch at the same time</div>
+        <div className="w-1/2 text-right">{DevicesHousehold}</div>
       </div>
-      <div>
-        <div>Download devices</div>
-        <div>{DownloadDevices}</div>
+      <div className="pt-[1%] pb-[1%] ">
+            <div className="h-1 bg-slate-700 opacity-20"></div>
+          </div>
+          <div className="flex text-xl font-bold">
+
+        <div className="w-1/2">Download devices</div>
+        <div className="w-1/2 text-right">{DownloadDevices}</div>
       </div>
     </div>
   );

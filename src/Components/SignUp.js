@@ -158,7 +158,7 @@ const SignUp = () => {
               onClick={() => openDescription('netflix1')}
             >
               What is Netflix?{" "}
-              {isOpen === 'netflix1' && (<img width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/multiply.png" alt="multiply"/>) || (
+              {isOpen === 'netflix1' ? (<img width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/multiply.png" alt="multiply"/>) : (
                 <img
                 width="50"
                 height="50"
@@ -180,7 +180,7 @@ const SignUp = () => {
             <div className="bg-gray-600 bg-opacity-65 hover:bg-opacity-80 hover:bg-gray-500 text-white p-[1%] flex justify-between text-2xl rounded-md"
              onClick={() => openDescription('netflix2')}>
               How much does Netflix Cost?{" "}
-              {isOpen === 'netflix2' && (<img width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/multiply.png" alt="multiply"/>) || (
+              {isOpen === 'netflix2' ? (<img width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/multiply.png" alt="multiply"/>) : (
                 <img
                 width="50"
                 height="50"
@@ -200,7 +200,7 @@ const SignUp = () => {
 
             <div className="bg-gray-600 bg-opacity-65 hover:bg-opacity-80 hover:bg-gray-500 text-white p-[1%] flex justify-between text-2xl rounded-md"  onClick={() => openDescription('netflix3')}>
               Where can i Watch?
-              {isOpen === 'netflix3' && (<img width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/multiply.png" alt="multiply"/>) || (
+              {isOpen === 'netflix3' ? (<img width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/multiply.png" alt="multiply"/>) : (
                 <img
                 width="50"
                 height="50"
@@ -221,7 +221,7 @@ You can also download your favourite shows with the iOS or Android app. Use down
 
             <div className="bg-gray-600 bg-opacity-65 hover:bg-opacity-80 hover:bg-gray-500 text-white p-[1%] flex justify-between text-2xl rounded-md"  onClick={() => openDescription('netflix4')}>
               How do i Cancel?
-              {isOpen === 'netflix4' && (<img width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/multiply.png" alt="multiply"/>) || (
+              {isOpen === 'netflix4' ? (<img width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/multiply.png" alt="multiply"/>) : (
                 <img
                 width="50"
                 height="50"
@@ -240,7 +240,7 @@ You can also download your favourite shows with the iOS or Android app. Use down
             <div>
             <div className="bg-gray-600 bg-opacity-65 hover:bg-opacity-80 hover:bg-gray-500 text-white p-[1%] flex justify-between text-2xl rounded-md"  onClick={() => openDescription('netflix5')}>
               What can i watch on Netflix?
-              {isOpen === 'netflix5' && (<img width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/multiply.png" alt="multiply"/>) || (
+              {isOpen === 'netflix5' ? (<img width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/multiply.png" alt="multiply"/>) : (
                 <img
                 width="50"
                 height="50"
@@ -259,7 +259,7 @@ Netflix has an extensive library of feature films, documentaries, TV shows, anim
            <div>
            <div className="bg-gray-600 bg-opacity-65 hover:bg-opacity-80 hover:bg-gray-500 text-white p-[1%] flex justify-between text-2xl rounded-md"  onClick={() => openDescription('netflix6')}>
               Is Netflix good for kids?
-              {isOpen === 'netflix6' && (<img width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/multiply.png" alt="multiply"/>) || (
+              {isOpen === 'netflix6' ? (<img width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/multiply.png" alt="multiply"/>) : (
                 <img
                 width="50"
                 height="50"

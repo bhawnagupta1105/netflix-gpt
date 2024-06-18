@@ -12,7 +12,7 @@ import {
 } from "firebase/auth";
 import { auth } from "../Utils/firebase";
 import { Photo_Url } from "../Utils/constants";
-import Footer from "./Footer";
+//import Footer from "./Footer";
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
   const [errormessage, seterrormessage] = useState(null);
@@ -165,7 +165,7 @@ const Login = () => {
         </form>
       </div>
       </div>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 };

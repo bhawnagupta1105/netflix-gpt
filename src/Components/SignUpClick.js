@@ -1,6 +1,6 @@
 
 import { useNavigate } from "react-router-dom";
-import Plan from "./Plan";
+
 
 const SignUpClick = () => {
     const navigate = useNavigate();
