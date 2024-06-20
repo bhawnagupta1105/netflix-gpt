@@ -5,10 +5,13 @@ import { RouterProvider } from "react-router-dom";
 //import MovieCard from "./MovieCard";
 //import MovieCardPupup from "./movieCardPopup";
 //import SignUp from "./SignUp";
-import SignUpClick from "./SignUpClick";
+import SignUpClick from "./Payment/SignUpClick";
 //import Login from "./Login";
-import Plan from "./Plan";
-import PlanDetails from "./PlanDetails";
+import Plan from "./Payment/Plan";
+import PlanDetails from "./Payment/PlanDetails";
+import Payment from "./Payment/Payment";
+import CardPayment from "./Payment/CardPayment";
+import UpiPayment from "./Payment/UpiPayment";
 //import GptSearch from "./GptSearch";
 //import GptSearchBar from "./GptSearchBar";
 
@@ -16,11 +19,14 @@ const Body = () => {
   const appRouter = createBrowserRouter([
 
     {path: "/", element: <SignUpClick/>},
+    {path: "/cardPayment", element: <CardPayment/>},
+    {path: "/upiPayment", element:<UpiPayment/>},
 //{path: "/browse", element: <Browse/>},
 // {path: "/signUp", element: <SignUp/>},
 {path: "/signUpClick", element: <SignUpClick/>},
 {path: "/plan", element: <Plan/>},
-{path:"/planDetails", element:<PlanDetails/>}
+{path:"/planDetails", element:<PlanDetails/>},
+{path:"/payment", element:<Payment/>}
 // {path: "/browse", element: <Browse/>},
     // {
     //   path: "/browse",

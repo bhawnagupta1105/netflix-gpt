@@ -1,12 +1,16 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import PlanDetails from "./PlanDetails";
-
+import { useNavigate } from "react-router-dom";
 const Plan = () => {
 
     const [showDetails,setshowDetails] = useState(false);
     const[planDetails,setplanDetails] = useState(null);
     const[activePlan,setactivePlan] = useState(null);
-    //const navigate = useNavigate();
+    const navigate = useNavigate();
+    const NextButtonClick = () => {
+        navigate("/payment");
+
+    }
     const showPlans = (plantype) => {
         let planDetails;
         if(plantype === "plan1"){
@@ -55,10 +59,13 @@ const Plan = () => {
             setshowDetails(true);
             setactivePlan(plantype);
         };
+        useEffect(() => {
+            showPlans("plan3");
+        },[])
 return (
     <div className="pt-[6%] pl-5 pr-10 md:pl-[20%] md:pr-[20%]  "> 
         <div className="">
-          <div className="text-lg " >STEP <b>2</b> OF <b>4</b></div>
+          <div className="text-lg " >STEP <b>3</b> OF <b>4</b></div>
           <br/>
           <div className="text-xl md:text-7xl font-bold ">
             Choose the plan that's right for you.
@@ -137,7 +144,7 @@ return (
         <br/>
         <br/>
         <br/>
-        <div className="text-xl">
+        <div className="texl-sm md:text-xl text-zinc-500">
             <div>
             HD(720p),Full HD(1080p),Ultra HD(4K),and HDR availability subject to your internet service and device capabilities. Not all content is available in all resolutions.
             See our <href>Terms of Use</href> for more details.
@@ -146,7 +153,17 @@ return (
             <div>
                 Only people who live with you may use your account.Watch on 4 defferent devices at the same time with Premium, 2 with Standard, and 1 with Basic and Mobile
             </div>
+            
         </div>
+        <br/>
+            <br/>
+            <div className="flex justify-center">
+            <button className="bg-red-600  rounded-md text-white w-11/12 text-xl md:text-2xl lg:text-4xl p-[1%] pt-[1%] pb-[1%] md:pt-5 md:pb-5" onClick={NextButtonClick}>
+                Next
+            </button>
+        </div>
+        <br/>
+        <br/>
     </div>
 )
 }

@@ -1,4 +1,4 @@
-import Header from "./Header";
+import Header from "../Header";
 import { useState } from "react";
 
 const SignUp = () => {
@@ -260,7 +260,7 @@ Netflix has an extensive library of feature films, documentaries, TV shows, anim
            <div className="bg-gray-600 bg-opacity-65 hover:bg-opacity-80 hover:bg-gray-500 text-white p-[1%] flex justify-between text-2xl rounded-md"  onClick={() => openDescription('netflix6')}>
               Is Netflix good for kids?
               {isOpen === 'netflix6' ? (<img width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/multiply.png" alt="multiply"/>) : (
-                <img
+                <i mg
                 width="50"
                 height="50"
                 src="https://img.icons8.com/ios/50/FFFFFF/plus-math--v1.png"

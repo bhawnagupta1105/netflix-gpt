@@ -14,7 +14,7 @@ const PlanDetails = ({data}) => {
         } = data;
 console.log(data);
   return (
-    <div>
+    <div className="text-zinc-500">
       <div className="flex text-xl font-bold">
         <div className="w-1/2">Monthly price</div>
         <div className="w-1/2 text-right">{MonthlyPrice}</div>
