@@ -35,7 +35,7 @@ const CardPayment = () => {
   };
 
   return (
-    <div className="flex justify-center pt-[6%] pl-5 pr-10 md:pl-[20%] md:pr-[20%]">
+    <div className="flex justify-center pt-[6%] pl-5 pr-10 md:pl-[20%] md:pr-[20%] pb-[6%]">
       <div>
         <div className="text-lg md:text-xl lg:text-2xl">
           STEP <b>4</b> OF <b>4</b>
@@ -50,6 +50,7 @@ const CardPayment = () => {
           <div className="flex">
             <img className="h-20 w-20" src="https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/visa-512.png" alt="visa" />
             <img className="h-20 w-20" src="https://cdn0.iconfinder.com/data/icons/shift-ecommerce/32/Master_Card-256.png" alt="mastercard" />
+            <img className="h-20 w-29 rounded-2xl" src="https://w7.pngwing.com/pngs/181/728/png-transparent-diners-club-international-credit-card-discover-card-logo-payment-credit-card-blue-text-plus.png" alt="dinnersClub" />
           </div>
           <div className="border-4 border-neutral-300 hover:bg-neutral-300 p-4 flex justify-between items-center text-2xl rounded-md mt-4">
             <input

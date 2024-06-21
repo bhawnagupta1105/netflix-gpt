@@ -12,6 +12,7 @@ import PlanDetails from "./Payment/PlanDetails";
 import Payment from "./Payment/Payment";
 import CardPayment from "./Payment/CardPayment";
 import UpiPayment from "./Payment/UpiPayment";
+import TermsUse from "./Payment/TermsUse";
 //import GptSearch from "./GptSearch";
 //import GptSearchBar from "./GptSearchBar";
 
@@ -19,6 +20,7 @@ const Body = () => {
   const appRouter = createBrowserRouter([
 
     {path: "/", element: <SignUpClick/>},
+    {path: "/termsuse", element: <TermsUse/>},
     {path: "/cardPayment", element: <CardPayment/>},
     {path: "/upiPayment", element:<UpiPayment/>},
 //{path: "/browse", element: <Browse/>},

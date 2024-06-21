@@ -30,7 +30,7 @@ const UpiPayment = () => {
         <br />
         <br />
         <div className="text-lg ">
-          STEP <b>4</b> OF <b>4</b>
+          STEP <b>3</b> OF <b>4</b>
         </div>
         <br />
         <br />

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import PlanDetails from "./PlanDetails";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const Plan = () => {
 
     const [showDetails,setshowDetails] = useState(false);
@@ -11,8 +11,13 @@ const Plan = () => {
         navigate("/payment");
 
     }
+    const TermsOfUse = () => {
+        navigate("/termsuse")
+    }
     const showPlans = (plantype) => {
         let planDetails;
+       
+   
         if(plantype === "plan1"){
 
             planDetails = {
@@ -65,9 +70,9 @@ const Plan = () => {
 return (
     <div className="pt-[6%] pl-5 pr-10 md:pl-[20%] md:pr-[20%]  "> 
         <div className="">
-          <div className="text-lg " >STEP <b>3</b> OF <b>4</b></div>
+          <div className="text-lg " >STEP <b>2</b> OF <b>4</b></div>
           <br/>
-          <div className="text-xl md:text-7xl font-bold ">
+          <div className="text-xl md:text-3xl lg:text-5xl xl:text-7xl font-bold ">
             Choose the plan that's right for you.
           </div>
           <br/>
@@ -79,7 +84,7 @@ return (
           <button
                     onClick={() => showPlans("plan1")}
                     className={`rounded-3xl border-2 md:border-4 border-gray-500 p-1 pb-11 md:p-3 lg:p-6 xl:p-10   ${
-                        activePlan === "plan1" ? "text-white bg-gradient-to-br from-blue-950 to-red-700" : ""
+                        activePlan === "plan1" ? "text-white bg-gradient-to-br from-blue-950 via-sky-600 to-teal-600" : ""
                     }`}
                 >
                     <b className="text-lg md:text-2xl md:mr-10 ">Premium</b>
@@ -91,8 +96,8 @@ return (
 
           <button
                     onClick={() => showPlans("plan2")}
-                    className={`rounded-3xl border-2 md:border-4 border-gray-500 p-1 pb-11 md:p-3 lg:p-6 xl:p-10 ${
-                        activePlan === "plan2" ? "text-white bg-gradient-to-br from-blue-900 via-indigo-700 to-purple-600" : ""
+                    className={` rounded-3xl border-2 md:border-4 border-gray-500 p-1 pb-11 md:p-3 lg:p-6 xl:p-10 ${
+                        activePlan === "plan2" ? "text-white bg-gradient-to-br from-blue-900 via-indigo-700 to-teal-900" : ""
                     }`}
                 >
                     <b className="text-lg md:text-2xl p-0 md:mr-10">Standard</b>
@@ -101,18 +106,19 @@ return (
           </div>
           <div className="pr-[4%]">
 
-
+<div className=" pb-0 -mt-9">
+<div className="lg:p-1 md:p-0 p-0 text-sm flex justify-center  md:text-xl rounded-t-lg border-2 md:border-4 border-gray-500 text-white bg-gradient-to-br from-cyan-800 to-emerald-500">Most Popular</div>
 <button
                     onClick={() => showPlans("plan3")}
-                    className={` rounded-3xl border-2 md:border-4 border-gray-500 p-1 pb-11 md:p-3 lg:p-6 xl:p-10 ${
-                        activePlan === "plan3" ? "text-white bg-gradient-to-br from-sky-800 via-blue-900 to-purple-800" : ""
+                    className={` rounded-b-3xl rounded-t-md border-2 md:border-4 border-gray-500 p-1 pb-11 md:p-3 lg:p-6 xl:p-10 ${
+                        activePlan === "plan3" ? "text-white bg-gradient-to-br from-sky-800 via-blue-900 to-emerald-500" : ""
                     }`}
                 >
                     <b className="text-lg md:text-2xl p-4 md:p-6 md:mr-10">Basic</b>
                     <p className="text-base md:mr-10 md:mb-10">720p</p>
                 </button>
 </div>
-
+</div>
 
 <div className="">
 
@@ -147,7 +153,7 @@ return (
         <div className="texl-sm md:text-xl text-zinc-500">
             <div>
             HD(720p),Full HD(1080p),Ultra HD(4K),and HDR availability subject to your internet service and device capabilities. Not all content is available in all resolutions.
-            See our <href>Terms of Use</href> for more details.
+            See our <Link className="underline text-blue-500" onClick={TermsOfUse}>Terms of Use</Link> for more details.
             </div>
             <br/>
             <div>
