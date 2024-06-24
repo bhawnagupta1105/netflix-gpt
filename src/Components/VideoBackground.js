@@ -2,6 +2,8 @@ import { useSelector } from "react-redux";
 import useMovieTrailer from "../hooks/useMovieTrailer";
 import React from "react";
 
+//import { useNavigate } from "react-router-dom";
+
 const VideoBackground = ({ movieId }) => {
   //fetch trailer video and updating the store with trailer Video Data
   const trailerVideo = useSelector((store) => store.movies?.trailerVideo);

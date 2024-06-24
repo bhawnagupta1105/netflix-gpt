@@ -1,5 +1,6 @@
 import React from "react";
 import GptSearchBar from "./GptSearchBar";
+//import { useNavigate } from "react-router-dom";
 import GptSearchPage from "./GptSearchPage";
 
 const GptSearch = () => {

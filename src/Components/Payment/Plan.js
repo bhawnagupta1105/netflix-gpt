@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import PlanDetails from "./PlanDetails";
 import { Link, useNavigate } from "react-router-dom";
+//import { Link, useNavigate } from "react-router-dom";
 const Plan = () => {
 
     const [showDetails,setshowDetails] = useState(false);

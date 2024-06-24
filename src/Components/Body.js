@@ -15,6 +15,7 @@ import UpiPayment from "./Payment/UpiPayment";
 import TermsUse from "./Payment/TermsUse";
 //import GptSearch from "./GptSearch";
 //import GptSearchBar from "./GptSearchBar";
+//import { useNavigate } from "react-router-dom";
 
 const Body = () => {
   const appRouter = createBrowserRouter([

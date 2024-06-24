@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+//import { useNavigate } from "react-router-dom";
 
 const CardPayment = () => {
   const [checkedIn, setCheckedIn] = useState(false);
@@ -18,7 +19,7 @@ const CardPayment = () => {
   const handleSubmit = (event) => {
     event.preventDefault(); // Prevent form submission
 
-    // Check if the checkbox is checked
+  
     if (!checkedIn) {
       setShowCheckboxAlert(true);
       return; // Exit function if checkbox is not checked

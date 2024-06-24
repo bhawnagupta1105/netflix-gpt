@@ -1,3 +1,5 @@
+//import { useNavigate } from "react-router-dom";
+
 export const checkValidData = (email,password) => {
 
     //It will return value in true or false

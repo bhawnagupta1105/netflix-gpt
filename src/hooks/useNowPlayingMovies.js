@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { API_OPTIONS } from "../Utils/constants";
 import { addNowPlayingMovies } from "../Utils/movieSlice";
+//import { useNavigate } from "react-router-dom";
 
 const useNowPlayingMovies = () => {
   const dispatch = useDispatch();

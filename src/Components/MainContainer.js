@@ -2,6 +2,8 @@ import { useSelector } from "react-redux";
 import VideoBackground from "./VideoBackground";
 import VideoTitle from "./VideoTitle";
 import React from "react";
+//import { useNavigate } from "react-router-dom";
+
 const MainContainer = () => {
   const movies = useSelector((store) => store.movies?.nowPlayingMovies);
   if (!movies) return; //also called as early return

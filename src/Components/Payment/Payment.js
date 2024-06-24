@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import CardPayment from "./CardPayment";
-import UpiPayment from "./UpiPayment";
+//import CardPayment from "./CardPayment";
+//import UpiPayment from "./UpiPayment";
 
 const Payment = () => {
   const navigate = useNavigate();

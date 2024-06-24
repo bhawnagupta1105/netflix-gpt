@@ -1,5 +1,6 @@
 import Header from "../Header";
 import { useState } from "react";
+//import { useState } from "react";
 
 const SignUp = () => {
   const [isOpen, setisOpen] = useState(null);

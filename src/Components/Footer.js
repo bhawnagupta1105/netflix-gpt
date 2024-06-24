@@ -1,3 +1,5 @@
+//import { useNavigate } from "react-router-dom";
+
 const Footer = () => {
     return (
         <div className="bg-black p-4 flex-col fixed z-50 bottom-0 w-[100%] opacity-85 *:">

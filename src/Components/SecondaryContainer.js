@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux"
 import MovieList from "./MovieList"
+//import { useNavigate } from "react-router-dom";
 
 
 const SecondaryContainer = () => {

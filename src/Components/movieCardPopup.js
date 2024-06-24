@@ -1,6 +1,7 @@
 import { useState } from "react"
 import Modal from 'react-modal';
 import MainContainer from "./MainContainer";
+//import { useNavigate } from "react-router-dom";
 
 const MovieCardPupup = () => {
 

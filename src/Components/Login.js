@@ -4,6 +4,7 @@ import { checkValidData } from "../Utils/Validate";
 
 import {useDispatch} from "react-redux";
 import { addUser } from "../Utils/userSlice";
+//import { useNavigate } from "react-router-dom";
 
 import {
   createUserWithEmailAndPassword,

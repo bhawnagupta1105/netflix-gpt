@@ -1,3 +1,5 @@
+//import { useNavigate } from "react-router-dom";
+
 const lang = {
   en: {
     search: "Search",

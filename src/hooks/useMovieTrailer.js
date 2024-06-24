@@ -2,6 +2,8 @@ import { API_OPTIONS } from "../Utils/constants";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addTrailerVideo } from "../Utils/movieSlice";
+//import { useNavigate } from "react-router-dom";
+
 const useMovieTrailer = (movieId) => {
   const dispatch = useDispatch();
   const trailerVideo = useSelector((store) => store.movies.trailerVideo);

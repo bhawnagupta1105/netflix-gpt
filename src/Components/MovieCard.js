@@ -1,4 +1,5 @@
 import { IMG_CDN_URL } from "../Utils/constants";
+//import { useNavigate } from "react-router-dom";
 
 const MovieCard = ({posterPath}) => {
     if(!posterPath) return "Poster not availabale"; 

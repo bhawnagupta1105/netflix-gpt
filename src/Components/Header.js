@@ -9,6 +9,8 @@ import { toggleGptSearchView } from "../Utils/gptSlice";
 import { SUPPORTED_LANGUAGES } from "../Utils/constants";
 import { changeLanguage } from "../Utils/configSlice";
 import lang from "../Utils/languageConstants";
+//import { useNavigate } from "react-router-dom";
+
 const Header = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();

@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import MovieList from "./MovieList";
+//import { useNavigate } from "react-router-dom";
 
 const GptSearchPage = () => {
     const {movieResults,movieNames} = useSelector((store) => store.gpt);

@@ -1,7 +1,8 @@
 
 
 
-const PlanDetails = ({data}) => {
+//const PlanDetails = ({data}) => {
+  const PlanDetails = ({data}) => {
 
         const {
             MonthlyPrice,

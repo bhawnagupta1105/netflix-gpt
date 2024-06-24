@@ -4,6 +4,7 @@ import lang from "../Utils/languageConstants";
 import openai from "../Utils/openAi";
 import { API_OPTIONS } from "../Utils/constants";
 import { addGptMovieResult } from "../Utils/gptSlice";
+//import { useNavigate } from "react-router-dom";
 
 const GptSearchBar = () => {
   const langkey = useSelector((store) => store.config.lang);

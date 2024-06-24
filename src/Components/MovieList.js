@@ -1,4 +1,5 @@
 import MovieCard from "./MovieCard";
+//import { useNavigate } from "react-router-dom";
 
 const MovieList = ({title,movies}) => {
     console.log(movies);

@@ -1,3 +1,4 @@
+//import { useNavigate } from "react-router-dom";
 const TermsUse = () => {
   return (
     <div className="pt-[6%] pr-[6%] pl-[6%] pb-[6%] text-xl">
