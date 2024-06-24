@@ -2,10 +2,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { API_OPTIONS } from "../Utils/constants";
 import { addUpcommingMovies } from "../Utils/movieSlice";
 import { useEffect } from "react";
-//import { useNavigate } from "react-router-dom";
 
 
-const useUpcommingMovies = (movies,title) => {
+
+const useUpcommingMovies = () => {
 const dispatch = useDispatch();
 const upcommingMovies = useSelector((store) => store.movies.upcommingMovies);
 

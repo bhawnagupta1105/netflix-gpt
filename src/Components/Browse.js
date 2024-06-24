@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
 import usePopularMovies from "../hooks/usePopularMovies";
-import useUpcommingMovies from "../hooks/useUpcommingMovies";
+import useUpcommingMovies from "../hooks/useUpcommingMovies.js";
 import Footer from "./Footer";
 import GptSearch from "./GptSearch";
 import Header from "./Header";
