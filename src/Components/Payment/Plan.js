@@ -59,14 +59,14 @@ const Plan = () => {
   };
 
   return (
-    <div className="pt-[6%] pl-5 pr-10   ">
+    <div className="pt-[6%] pl-[5%] pr-[5%]">
       <div className="w-10/12 m-auto">
         <div className="">
           <div className="text-lg ">
             STEP <b>2</b> OF <b>4</b>
           </div>
           <br />
-          <div className="text-base md:text-xl lg:text-3xl xl:text-5xl font-bold ">
+          <div className="text-base md:text-xl lg:text-3xl xl:text-4xl font-bold ">
             Choose the plan that's right for you.
           </div>
           <br />
@@ -181,7 +181,7 @@ const Plan = () => {
         <br />
         <div className="flex justify-center">
           <button
-            className="bg-red-600  rounded-md text-white w-11/12 text-xl md:text-2xl lg:text-4xl p-[1%] pt-[1%] pb-[1%] md:pt-5 md:pb-5"
+            className="bg-red-600  rounded-md text-white w-11/12 text-xl md:text-2xl lg:text-3xl p-[1%] pt-[1%] pb-[1%] md:pt-5 md:pb-5"
             onClick={NextButtonClick}
           >
             Next
